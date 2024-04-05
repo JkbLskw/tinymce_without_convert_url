@@ -199,7 +199,7 @@ const EditorUpload = (editor: Editor): EditorUpload => {
             if (Rtc.isRtc(editor)) {
               // RTC handles replacing the image URL through callback events
             } else {
-              replaceImageUriInView(image, uploadInfo.url);
+              // replaceImageUriInView(image, uploadInfo.url);
             }
           } else if (uploadInfo.error) {
             if (uploadInfo.error.remove) {
