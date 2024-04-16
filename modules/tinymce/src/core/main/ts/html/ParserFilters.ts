@@ -23,9 +23,9 @@ const registerBase64ImageFilter = (parser: DomParser, settings: DomParserSetting
         return;
       }
 
-      BlobCacheUtils.dataUriToBlobInfo(blobCache, inputSrc, true).each((blobInfo) => {
-        img.attr('src', blobInfo.blobUri());
-      });
+      // BlobCacheUtils.dataUriToBlobInfo(blobCache, inputSrc, true).each((blobInfo) => {
+      //   img.attr('src', blobInfo.blobUri());
+      // });
     };
 
     parser.addAttributeFilter('src', (nodes) => Arr.each(nodes, processImage));
